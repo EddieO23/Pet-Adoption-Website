@@ -3,7 +3,9 @@ body, html {
     padding: 0;
     background-color: white;
 }
-
+body {
+    font-family: "Montserrat", sans-serif;
+}
 .top-section-wrapper {
     background-color: #001D37;
     padding-left: 16px;
@@ -19,9 +21,17 @@ body, html {
 }
 
 .our-btn {
+    font-weight: 600;
     background-color: #475AFF;
     color: #fff;
     text-decoration: none;
     padding: 13px 25px;
     border-radius: 1000px;
+}
+.our-btn--outline {
+    background-color: transparent;
+    border: 2px solid white;
+}
+.utility-mr {
+    margin-right: 10px;
 }
