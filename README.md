@@ -1,2 +1,2 @@
 # Pet-Adoption Website
- A website for Pet Adoption
+ A website for a Pet Adoption Firm
