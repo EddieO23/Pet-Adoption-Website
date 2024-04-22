@@ -7,6 +7,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 .top-section-wrapper {
+    overflow: hidden;
     background-color: #001D37;
     padding-left: 16px;
     padding-right: 16px;
@@ -14,24 +15,196 @@ body {
 
 .top-section {
     color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1066px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.actual-top-content {
+    z-index: 2;
+    position: relative;
+}
+
+.top-section h1 {
+    font-size: 4rem;
+    margin: 0;
+    line-height: 97.3%;
+    max-width: 525px;
+}
+
+@media screen and (min-width: 600px) {
+    .top-section h1 {
+    font-size: 6.25rem;
+    }
+
+    .top-section {
     padding-top: 139px;
     padding-bottom: 139px;
-    max-width: 1066px;
-    margin: 0 auto
+    }
+}
+
+.intro-text {
+    font-size: 1.25rem;
+    line-height: 169.3%;
+    margin: 1rem 0;
+    max-width: 435px;
+}
+
+.intro-buttons {
+    margin-bottom: 129px;
 }
 
 .our-btn {
+    display: inline-block;
+    font-size: 1.125rem;
     font-weight: 600;
     background-color: #475AFF;
+    border: 2px solid #475AFF;
     color: #fff;
     text-decoration: none;
     padding: 13px 25px;
     border-radius: 1000px;
 }
+
 .our-btn--outline {
     background-color: transparent;
     border: 2px solid white;
 }
+
 .utility-mr {
     margin-right: 10px;
+}
+
+.intro-feature {
+    padding: 33px 25px;
+    border: 1px solid rgba(255,255, 255, .24);
+}
+
+.intro-features p {
+    margin: 0;
+    font-size: 1.0625rem;
+}
+
+.intro-feature h2 {
+    font-size: 1.5rem;
+    margin: 31px 0 3px 0;
+}
+
+.intro-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+}
+
+.circle {
+    width: 617px;
+    height: 617px;
+    background-color: #b154dd;
+    opacity: .85;
+    border-radius: 50%;
+    filter: blur(150px);
+    position: absolute;
+    top: 62px;
+    right: -390px;
+}
+.circle-2 {
+    width: 617px;
+    height: 617px;
+    background-color: #3954bc;
+    opacity: .85;
+    border-radius: 50%;
+    filter: blur(150px);
+    position: absolute;
+    top: -365px;
+    left: -123px;
+}
+
+.page-section {
+    background-color: #fff;
+    padding: 130px 16px;
+}
+
+.page-section-inner {
+    max-width: 1066px;
+    margin: 0 auto;
+}
+
+.page-section-title {
+    font-size: 5.3125rem;
+    margin: 0;
+    list-style: none;
+    line-height: 1;
+}
+
+.pet-filter {
+    color: #afafaf;
+    font-size: 1.375rem;
+}
+
+.pet-filter button {
+    background-color: transparent;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.375rem;
+    color: #afafaf;
+}
+
+.site-footer p {
+    text-align: center;
+    color: #9b9b9b;
+    font-size: .875rem;
+    margin: 0;
+    padding: 0 0 65px 0;
+}
+
+.list-of-pets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 34px;
+    row-gap: 28px;
+}
+
+.pet-card {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    border-radius: 20px;
+    border: 1px solid #f3f3f3;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0, 0.08);
+}
+
+.pet-card-photo {
+    order: 1;
+    grid-row: 1;
+}
+
+.pet-card-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.pet-card-text {
+    padding: 21px 29px;
+}
+
+.pet-card-text h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+
+.pet-description {
+    margin: 0 0 1rem 0;
+    color: #696969;
+    line-height: 150%;
+}
+
+.page-age {
+    font-size: .85rem;
+    color: #b8b8b8;
+    margin: 0;
 }
