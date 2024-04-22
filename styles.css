@@ -34,16 +34,6 @@ body {
     max-width: 525px;
 }
 
-@media screen and (min-width: 600px) {
-    .top-section h1 {
-    font-size: 6.25rem;
-    }
-
-    .top-section {
-    padding-top: 139px;
-    padding-bottom: 139px;
-    }
-}
 
 .intro-text {
     font-size: 1.25rem;
@@ -53,7 +43,7 @@ body {
 }
 
 .intro-buttons {
-    margin-bottom: 129px;
+    margin-bottom: 70px;
 }
 
 .our-btn {
@@ -66,6 +56,18 @@ body {
     text-decoration: none;
     padding: 13px 25px;
     border-radius: 1000px;
+    transition: background-color .3s ease-out, border .3s ease-out, color .3s ease-out;
+}
+
+.our-btn:hover {
+    background-color: #2839db;
+    border: 2px solid #2839db;
+}
+
+.our-btn--outline:hover {
+    background-color: #fff;
+    color: #475AFF;
+    border: 2px solid white;
 }
 
 .our-btn--outline {
@@ -94,8 +96,19 @@ body {
 
 .intro-features {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
+    row-gap: 16px;
+}
+
+@media screen and (min-width: 580px) {
+    .intro-features {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 900px) {
+    .intro-features {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 .circle {
@@ -109,6 +122,7 @@ body {
     top: 62px;
     right: -390px;
 }
+
 .circle-2 {
     width: 617px;
     height: 617px;
@@ -123,7 +137,7 @@ body {
 
 .page-section {
     background-color: #fff;
-    padding: 130px 16px;
+    padding: 60px 16px;
 }
 
 .page-section-inner {
@@ -132,22 +146,21 @@ body {
 }
 
 .page-section-title {
-    font-size: 5.3125rem;
+    font-size: 4rem;
     margin: 0;
-    list-style: none;
     line-height: 1;
 }
 
 .pet-filter {
     color: #afafaf;
-    font-size: 1.375rem;
+    font-size: 1.15rem;
 }
 
 .pet-filter button {
     background-color: transparent;
     border: none;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.375rem;
+    font-size: 1.15rem;
     color: #afafaf;
 }
 
@@ -161,9 +174,9 @@ body {
 
 .list-of-pets {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     column-gap: 34px;
-    row-gap: 28px;
+    row-gap: 16px;
 }
 
 .pet-card {
@@ -188,7 +201,7 @@ body {
 }
 
 .pet-card-text {
-    padding: 21px 29px;
+    padding: 18px 16px;
 }
 
 .pet-card-text h3 {
@@ -198,6 +211,7 @@ body {
 }
 
 .pet-description {
+    font-size: .9rem;
     margin: 0 0 1rem 0;
     color: #696969;
     line-height: 150%;
@@ -207,4 +221,51 @@ body {
     font-size: .85rem;
     color: #b8b8b8;
     margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+
+    .pet-description {
+        font-size: 1rem;
+    }
+
+    .pet-card-text {
+        padding: 21px 29px;
+    }
+
+    .list-of-pets {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+        column-gap: 34px;
+        row-gap: 28px;
+    }
+
+    .pet-filter {
+        font-size: 1.375rem;
+    }
+    
+    .pet-filter button {
+        font-size: 1.375rem; 
+    }
+
+    .page-section-title {
+        font-size: 5.3125rem;
+    }
+
+    .page-section {
+    padding: 130px 16px;
+    }
+
+    .intro-buttons {
+    margin-bottom: 129px;
+    }
+
+    .top-section h1 {
+    font-size: 6.25rem;
+    }
+
+    .top-section {
+    padding-top: 139px;
+    padding-bottom: 139px;
+    }
 }
