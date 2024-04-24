@@ -252,6 +252,21 @@ body {
     
     .pet-filter button {
         font-size: 1.375rem; 
+        background-color: transparent;
+        border: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5rem;
+        color: #9f9f9f;
+        cursor: pointer;
+    }
+
+    .pet-filter button:hover {
+        color: #7d7d7d;
+    }
+
+    .pet-filter .active, .pet-filter .active:hover  {
+    color: #3c4ffc;
+    text-decoration: underline;
     }
 
     .page-section-title {
